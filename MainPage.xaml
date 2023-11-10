@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="netMauiEjercicio1_3.MainPage"
+             Title="Agregar Persona"
+             >
+
+
+
+    <ContentPage.Content>
+        
+        <StackLayout Margin="5">
+            <Label Text="Nombres" 
+                   HorizontalOptions="StartAndExpand"
+                   />
+            <Entry x:Name="txtName"
+                   Keyboard="Text"
+                   HorizontalTextAlignment="Start"     
+                   />
+            
+            <Label Text="Apellidos" 
+                    HorizontalOptions="StartAndExpand"
+                    />
+            <Entry x:Name="txtLastName"
+                   Keyboard="Text"
+                   HorizontalTextAlignment="Start"     
+                    />
+            
+            <Label Text="Edad" 
+                    HorizontalOptions="StartAndExpand"
+                    />
+            <Entry x:Name="txtAge"
+                   Keyboard="Numeric"
+                   HorizontalTextAlignment="Start"     
+                    />
+            
+            <Label Text="Correo Electronico" 
+                    HorizontalOptions="StartAndExpand"
+                    />
+            <Entry x:Name="txtEmail"
+                   Keyboard="Email"
+                   HorizontalTextAlignment="Start"     
+                    />
+            <Label Text="Dirección" 
+                    HorizontalOptions="StartAndExpand"
+                    />
+            <Entry x:Name="txtAddress"
+                   Keyboard="Text"
+                   HorizontalTextAlignment="Start"     
+                    />
+
+            <Button x:Name="btnSave"
+                    Text="Salvar"
+                    HorizontalOptions="CenterAndExpand"
+                    Clicked="btnSave_Clicked"
+                    
+                    />
+        </StackLayout>
+    </ContentPage.Content>    
+</ContentPage>

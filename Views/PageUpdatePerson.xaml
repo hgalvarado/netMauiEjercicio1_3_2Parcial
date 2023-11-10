@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="netMauiEjercicio1_3.Views.PageUpdatePerson"
+             Title="Actualizar Contacto">
+    <ContentPage.Content>
+
+        <StackLayout Margin="5">
+            <Label Text="Nombres" 
+               HorizontalOptions="StartAndExpand"
+               />
+            <Entry x:Name="txtUpdName"
+               Keyboard="Text"
+               HorizontalTextAlignment="Start"     
+               />
+
+            <Label Text="Apellidos" 
+                HorizontalOptions="StartAndExpand"
+                />
+            <Entry x:Name="txtUpdLastName"
+               Keyboard="Text"
+               HorizontalTextAlignment="Start"     
+                />
+
+            <Label Text="Edad" 
+                HorizontalOptions="StartAndExpand"
+                />
+            <Entry x:Name="txtUpdAge"
+               Keyboard="Numeric"
+               HorizontalTextAlignment="Start"     
+                />
+
+            <Label Text="Correo Electronico" 
+                HorizontalOptions="StartAndExpand"
+                />
+            <Entry x:Name="txtUpdEmail"
+               Keyboard="Email"
+               HorizontalTextAlignment="Start"     
+                />
+            <Label Text="Dirección" 
+                HorizontalOptions="StartAndExpand"
+                />
+            <Entry x:Name="txtUpdAddress"
+               Keyboard="Text"
+               HorizontalTextAlignment="Start"     
+                />
+
+            <Button x:Name="btnUpdate"
+                Text="Actualizar"
+                HorizontalOptions="CenterAndExpand"
+                Clicked="btnUpdate_Clicked"
+                
+                />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
